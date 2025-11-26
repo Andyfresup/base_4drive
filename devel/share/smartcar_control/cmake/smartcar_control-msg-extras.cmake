@@ -1,0 +1,2 @@
+set(smartcar_control_MESSAGE_FILES "/home/sonic003/ros_clk/src/smartcar_control/msg/State.msg;/home/sonic003/ros_clk/src/smartcar_control/msg/DriversInput.msg;/home/sonic003/ros_clk/src/smartcar_control/msg/VelInput.msg")
+set(smartcar_control_SERVICE_FILES "/home/sonic003/ros_clk/src/smartcar_control/srv/SetFloat.srv;/home/sonic003/ros_clk/src/smartcar_control/srv/SetInt.srv;/home/sonic003/ros_clk/src/smartcar_control/srv/SetString.srv;/home/sonic003/ros_clk/src/smartcar_control/srv/SetPoint.srv")
