@@ -70,10 +70,6 @@
 			<material>Gazebo/Gray</material>
 		</gazebo>
 
-		<gazebo reference="arm_slider_link">
-			<material>Gazebo/Gray</material>
-		</gazebo>
-
 		<gazebo reference="left_front_wheel">
 			<material>Gazebo/FlatBlack</material>
 		</gazebo>
@@ -153,7 +149,6 @@
 <!--		<xacro:transmission_effort joint_name="base_slider_joint"/>-->
 <!--		<xacro:transmission_effort joint_name="arm_left_joint"/>-->
 <!--		<xacro:transmission_effort joint_name="arm_right_joint"/>-->
-		<xacro:transmission_position joint_name="arm_slider_joint"/>
 <!--		<xacro:transmission_position joint_name="arm_left_joint"/>-->
 <!--		<xacro:transmission_position joint_name="arm_right_joint"/>-->
 

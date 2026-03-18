@@ -3,94 +3,39 @@ smartcar:
     type: "joint_state_controller/JointStateController"
     publish_rate: 50
 
-  slider_position_controller:
-    type: "position_controllers/JointPositionController"
-    joint: arm_slider_joint
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-
-  arm_left_position_controller1:
-    type: "position_controllers/JointPositionController"
-    joint: joint1_left
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_left_position_controller2:
-    type: "position_controllers/JointPositionController"
-    joint: joint2_left
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_left_position_controller3:
-    type: "position_controllers/JointPositionController"
-    joint: joint3_left
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_left_position_controller4:
-    type: "position_controllers/JointPositionController"
-    joint: joint4_left
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_left_position_controller5:
-    type: "position_controllers/JointPositionController"
-    joint: joint5_left
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_left_position_controller6:
-    type: "position_controllers/JointPositionController"
-    joint: joint6_left
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-
-  arm_right_position_controller1:
-    type: "position_controllers/JointPositionController"
-    joint: joint1_right
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_right_position_controller2:
-    type: "position_controllers/JointPositionController"
-    joint: joint2_right
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_right_position_controller3:
-    type: "position_controllers/JointPositionController"
-    joint: joint3_right
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_right_position_controller4:
-    type: "position_controllers/JointPositionController"
-    joint: joint4_right
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_right_position_controller5:
-    type: "position_controllers/JointPositionController"
-    joint: joint5_right
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-  arm_right_position_controller6:
-    type: "position_controllers/JointPositionController"
-    joint: joint6_right
-    pid: { p: 100.0, i: 0.01, d: 10.0 }
-
   rear_right_velocity_controller:
     type: "velocity_controllers/JointVelocityController"
     joint: right_back_wheel_joint
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: { p: 100.0, i: 0.01, d: 10.0 }
   rear_left_velocity_controller:
     type: "velocity_controllers/JointVelocityController"
     joint: left_back_wheel_joint
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    pid: { p: 100.0, i: 0.01, d: 10.0 }
   front_right_velocity_controller:
     type: "velocity_controllers/JointVelocityController"
     joint: right_front_wheel_joint
-    pid: { p: 100.0, i: 0.01, d: 10.0}
+    pid: { p: 100.0, i: 0.01, d: 10.0 }
   front_left_velocity_controller:
     type: "velocity_controllers/JointVelocityController"
     joint: left_front_wheel_joint
-    pid: { p: 100.0, i: 0.01, d: 10.0}
+    pid: { p: 100.0, i: 0.01, d: 10.0 }
 
   right_bridge_position_controller:
     type: "effort_controllers/JointPositionController"
     joint: right_bridge_to_bridge
-    pid: {p: 100.0, i: 0.1, d: 10.0}
+    pid: { p: 100.0, i: 0.1, d: 10.0 }
   left_bridge_position_controller:
     type: "effort_controllers/JointPositionController"
     joint: left_bridge_to_bridge
-    pid: {p: 100.0, i: 0.1, d: 10.0}
+    pid: { p: 100.0, i: 0.1, d: 10.0 }
   right_back_bridge_position_controller:
     type: "effort_controllers/JointPositionController"
     joint: right_back_bridge_to_bridge
-    pid: { p: 100.0, i: 0.1, d: 10.0}
+    pid: { p: 100.0, i: 0.1, d: 10.0 }
   left_back_bridge_position_controller:
     type: "effort_controllers/JointPositionController"
     joint: left_back_bridge_to_bridge
-    pid: { p: 100.0, i: 0.1, d: 10.0}
+    pid: { p: 100.0, i: 0.1, d: 10.0 }
 
   #gazebo_ros_control:
   #  pid_gains:
@@ -120,4 +65,3 @@ smartcar:
   #  cmd_vel_timeout: 0.2
 
   #  base_frame_id: base_footprint
-

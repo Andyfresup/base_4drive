@@ -24,9 +24,7 @@
  	<rosparam file="$(find smartcar_description)/config/smartcar_joint.yaml" command="load"/>
  	
  	<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" ns="/smartcar" output="screen" args="joint_state_controller
- 	arm_left_position_controller1 arm_left_position_controller2 arm_left_position_controller3 arm_left_position_controller4 arm_left_position_controller5 arm_left_position_controller6
- 	arm_right_position_controller1 arm_right_position_controller2 arm_right_position_controller3 arm_right_position_controller4 arm_right_position_controller5 arm_right_position_controller6
- 	slider_position_controller rear_right_velocity_controller rear_left_velocity_controller right_bridge_position_controller
+    rear_right_velocity_controller rear_left_velocity_controller right_bridge_position_controller
  	left_bridge_position_controller front_right_velocity_controller front_left_velocity_controller right_back_bridge_position_controller
  	left_back_bridge_position_controller"/>
 
