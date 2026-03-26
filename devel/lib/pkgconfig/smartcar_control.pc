@@ -1,8 +1,0 @@
-prefix=/home/sonic003/ros_clk/devel
-
-Name: smartcar_control
-Description: Description of smartcar_control
-Version: 0.0.0
-Cflags: -I/home/sonic003/ros_clk/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime geometry_msgs roscpp rospy sensor_msgs std_msgs

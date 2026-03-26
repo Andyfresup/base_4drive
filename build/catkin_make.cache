@@ -1,2 +1,0 @@
-smartcar_control:smartcar_description
--DCATKIN_DEVEL_PREFIX=/home/sonic003/ros_clk/devel -DCMAKE_INSTALL_PREFIX=/home/sonic003/ros_clk/install -G Unix Makefiles
