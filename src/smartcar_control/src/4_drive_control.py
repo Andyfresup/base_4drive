@@ -22,7 +22,8 @@ import tf2_ros
 import tf
 import tf.transformations as tft
 
-#sys.path.append(r'/home/silan/docker_ws/src/base_4drive/usrif/app/pyserui/python')
+# Add serui module to path
+sys.path.insert(0, '/home/andy/robocup26/base_4drive/src')
 from serui import *
 
 flag_move = 0
