@@ -40,7 +40,17 @@ source devel/setup.bash
 roslaunch smartcar_description smartcar_gazebo.launch
 ```
 
-## 4. 功能包说明
+## 4. 实机运行
+
+```bash
+# 1. 设置环境变量 (每次打开新终端都需要执行)
+source devel/setup.bash
+
+# 2. 启动 底盘 launch
+roslaunch smartcar_description task5_base.launch
+```
+
+## 5. 功能包说明
 
 * **src/smartcar_description**: 包含机器人的 URDF 模型文件和 Gazebo 启动文件。
 * **src/smartcar_control**: (如有) 包含机器人的控制配置。
