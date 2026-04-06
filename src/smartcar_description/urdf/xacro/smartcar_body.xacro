@@ -440,7 +440,7 @@
 		</joint>
         -->
 
-        <xacro:VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="440" gpu="false">
+		<xacro:VLP-16 parent="base_link" name="livox_frame" topic="/velodyne_points" hz="10" samples="440" gpu="false">
             <origin xyz="0 0 0.4" rpy="0 0 0" />
         </xacro:VLP-16>
 
