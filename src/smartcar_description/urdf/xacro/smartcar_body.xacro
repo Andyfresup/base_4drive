@@ -4,8 +4,8 @@
   
   	<!-- Macro for SmartCar body. Including Gazebo extensions, but does not include Kinect -->  
   	<include filename="$(find smartcar_description)/urdf/xacro/smartcar_sim.xacro"/>
-	<!-- <xacro:include filename="$(find smartcar_description)/urdf/xacro/sensors/lidar.xacro" /> -->
-    <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+	<xacro:include filename="$(find smartcar_description)/urdf/xacro/sensors/lidar.xacro" />
+    <!-- <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/> -->
 	<xacro:include filename="$(find smartcar_description)/urdf/xacro/sensors/imu.xacro" />
   
   	<xacro:macro name="smartcar_body">
@@ -440,9 +440,9 @@
 		</joint>
         -->
 
-		<xacro:VLP-16 parent="base_link" name="livox_frame" topic="/velodyne_points" hz="10" samples="440" gpu="false">
+		<!-- <xacro:VLP-16 parent="base_link" name="livox_frame" topic="/velodyne_points" hz="10" samples="440" gpu="false">
             <origin xyz="0 0 0.4" rpy="0 0 0" />
-        </xacro:VLP-16>
+        </xacro:VLP-16> -->
 
 		<xacro:imu prefix="imu"/>
 
@@ -455,4 +455,8 @@
 
 
 	</xacro:macro>
+
+	<!-- Call the smartcar_body macro to instantiate the robot -->
+	<xacro:smartcar_body />
+
 </robot>
